@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DemoWindowsFormApp
 {
-    public partial class Form1 : Form
+    public partial class Game : Form
     {
-        public Form1()
+        public Game()
         {
             InitializeComponent();
         }
@@ -51,6 +51,26 @@ namespace DemoWindowsFormApp
         private void lblCharacterHistory_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCharacterName_TextChanged(object sender, EventArgs e)
+        {
+            lblCharacterName.Text = txtCharacterName.Text.ToLower().Trim();
+        }
+
+        private void txtCharacterPower_TextChanged(object sender, EventArgs e)
+        {
+            lblCharacterPower.Text = txtCharacterPower.Text.ToLower().Trim();
+        }
+
+        private void txtCharacterHistory_TextChanged(object sender, EventArgs e)
+        {
+            lblCharacterHistory.Text = txtCharacterHistory.Text.ToLower().Trim();
         }
     }
 }
